@@ -1,0 +1,207 @@
+/* Overall Page Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+/* Header Styling */
+header {
+    background-color: #336699; 
+    color: white;
+    padding: 15px 0;
+}
+
+header h1 {
+    margin: 0;  
+}
+
+nav ul {
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center navigation items */
+}
+
+nav ul li {
+    display: inline-block; /* Allow some space around items */
+    margin: 0 10px; 
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+/* Hero Section */
+.hero {
+    background-color: #f0f0f0;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+.button {
+    background-color: #336699; /* Or your desired color */
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Featured Products Section */
+.featured-products {
+    padding: 30px 0;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive Layout */
+    gap: 20px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.buy-button {
+    display: inline-block; /* Fits nicely within the text */
+    background-color: #008000; /* Consider a green color for the buy button */
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+}
+/* Overall Page Styling */
+/* ... (Include previous CSS for body, container, hero, button) */
+
+/* Featured Products Section */
+.featured-products {
+    padding: 30px 0;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+
+    /* Add this to control image size */
+    max-height: 150px; /* Adjust the height as desired */
+    object-fit: cover; /* Keeps image proportions while resizing */
+}
+/* ... (Your existing CSS) */
+
+/* Latest Posts Section */
+.latest-posts .post img {
+    max-width: 100%; 
+    height: auto;  
+    margin-bottom: 15px; 
+    max-height: 150px; /* Limit image height (adjust as needed) */
+    object-fit: cover; /* Preserve aspect ratio when resizing */
+}
+
+/* Latest Posts, Email Signup, Footer - Add Styles Here! */
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    }
+}
+/* ... (Your existing CSS) */
+
+/* Email Signup Section */
+.email-signup {
+    background-color: #f0f0f0; /* Or a color of your choice */
+    padding: 30px 0;
+    text-align: center;
+}
+
+.email-signup h3 {
+    margin-bottom: 15px;
+}
+
+.email-signup form {
+    display: flex; /* Center elements horizontally */
+    flex-wrap: wrap; /* Wrap elements if needed on smaller screens */
+    justify-content: center;
+    max-width: 500px;
+    margin: 0 auto; 
+}
+
+.email-signup input[type="email"] {
+    flex: 1; /* Allow the input to grow and fill space */ 
+    padding: 10px 15px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px 0 0 3px; /* Rounded corners on the left side */
+}
+
+.email-signup button {
+    padding: 10px 20px;
+    background-color: #336699; /* Or a color of your choice */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 3px 3px 0; /* Rounded corners on the right side */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 500px) {
+    .email-signup form {
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    .email-signup input[type="email"] {
+        margin-right: 0;
+        margin-bottom: 10px;
+        border-radius: 3px; /* Rounded corners on all sides */
+    }
+
+    .email-signup button {
+        border-radius: 3px; /* Rounded corners on all sides */
+    }
+}

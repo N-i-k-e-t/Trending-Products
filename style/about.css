@@ -1,0 +1,144 @@
+/* General Styles */
+body { 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px; 
+}
+/* Header Styling */
+header {
+    background-color: #336699; 
+    color: white;
+    padding: 15px 0;
+}
+
+header h1 {
+    margin: 0;  
+}
+
+nav ul {
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center navigation items */
+}
+
+nav ul li {
+    display: inline-block; /* Allow some space around items */
+    margin: 0 10px; 
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+/* Hero */
+.hero {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 30px 0;
+}
+
+/* About Intro */
+.about-intro {
+    padding: 20px 0;
+}
+
+.content-image {
+    margin-bottom: 50px;
+}
+
+.content-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.content-text { 
+    /* Add styles as needed */
+}
+
+/* Benefits */
+.benefit-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.benefit {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+/* Responsive adjustments */ 
+@media (max-width: 768px) {
+    .about-intro .content-image, 
+    .about-intro .content-text {
+        text-align: center; /* Center elements on smaller screens */
+    }
+}
+/* Email Signup Section */
+.email-signup {
+    background-color: #f0f0f0; /* Or a color of your choice */
+    padding: 30px 0;
+    text-align: center;
+}
+
+.email-signup h3 {
+    margin-bottom: 15px;
+}
+
+.email-signup form {
+    display: flex; /* Center elements horizontally */
+    flex-wrap: wrap; /* Wrap elements if needed on smaller screens */
+    justify-content: center;
+    max-width: 500px;
+    margin: 0 auto; 
+}
+
+.email-signup input[type="email"] {
+    flex: 1; /* Allow the input to grow and fill space */ 
+    padding: 10px 15px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px 0 0 3px; /* Rounded corners on the left side */
+}
+
+.email-signup button {
+    padding: 10px 20px;
+    background-color: #336699; /* Or a color of your choice */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 3px 3px 0; /* Rounded corners on the right side */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 500px) {
+    .email-signup form {
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    .email-signup input[type="email"] {
+        margin-right: 0;
+        margin-bottom: 10px;
+        border-radius: 3px; /* Rounded corners on all sides */
+    }
+
+    .email-signup button {
+        border-radius: 3px; /* Rounded corners on all sides */
+    }
+}
